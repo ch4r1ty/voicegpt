@@ -54,18 +54,14 @@ print("The answer has been saved to answer.txt file.")
 
 
 
-
 # use bark to generate answer of chatgpt with voice
 
 # download and load all models
 preload_models()
 
 # generate audio from text
-""" code demo
-text_prompt = """
-     # Hello, my name is Suno. And, uh — and I like pizza. [laughs]
-     # But I also have other interests such as playing tic tac toe.
-"""
+""" 
+code demo
 """
 text_prompt = response
 
