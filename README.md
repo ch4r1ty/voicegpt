@@ -6,7 +6,7 @@
 
 ## This is a python file allowing you to talk with chatgpt, using bark, whisper and chatgptAPI
 
-
+You can run this demo on macos, linux and windows.
 
 ## Configure the environment
 
@@ -123,9 +123,10 @@ model = whisper.load_model("tiny")
 result = model.transcribe("audio.mp3")
 print(result["text"])
 ```
-Size	Parameters	English-only model	Multilingual model	Required VRAM	Relative speed
-tiny	39 M	tiny.en	tiny	~1 GB	~32x
-base	74 M	base.en	base	~1 GB	~16x
-small	244 M	small.en	small	~2 GB	~6x
-medium	769 M	medium.en	medium	~5 GB	~2x
-large	1550 M	N/A	large	~10 GB	1x
+| Size   | Parameters | English-only model | Multilingual model | Required VRAM | Relative speed |
+| ------ | ---------- | ------------------ | ------------------ | ------------- | -------------- |
+| tiny   | 39 M       | `tiny.en`          | `tiny`             | ~1 GB         | ~32x           |
+| base   | 74 M       | `base.en`          | `base`             | ~1 GB         | ~16x           |
+| small  | 244 M      | `small.en`         | `small`            | ~2 GB         | ~6x            |
+| medium | 769 M      | `medium.en`        | `medium`           | ~5 GB         | ~2x            |
+| large  | 1550 M     | N/A                | `large`            | ~10 GB        | 1x             |
